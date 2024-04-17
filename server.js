@@ -7,7 +7,12 @@ import authRoutes from "./routes/authRoute.js";
 import categoryRoute from "./routes/categoryRoute.js";
 import productRoute from "./routes/productRoute.js";
 import cors from "cors";
-import path from "path";
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 //configure env
 dotenv.config();
 
@@ -21,7 +26,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(morgan("dev"));
-app.use(express.static(path.join(__dirname, './client/build')))
+app.use(express.static(path.join(__dirname, './client/build')));
+
 //routes
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/category", categoryRoute);
