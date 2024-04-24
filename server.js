@@ -28,7 +28,11 @@ const __dirname = path.dirname(__filename);
 const app = express();
 
 //middlewares
-app.use(cors());
+app.use(cors({
+  origin: 'https://vast-pear-caridea-gear.cyclic.app/', // Replace with your frontend domain
+  credentials: true,
+}));
+
 app.use(express.json());
 app.use(morgan("dev"));
 app.use(express.static(path.join(__dirname, "./client/build")));
