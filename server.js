@@ -29,7 +29,7 @@ const app = express();
 
 //middlewares
 app.use(cors({
-  origin: 'https://vast-pear-caridea-gear.cyclic.app/', // Replace with your frontend domain
+  origin: 'https://vast-pear-caridea-gear.cyclic.app/', 
   credentials: true,
 }));
 
@@ -48,7 +48,7 @@ app.use("*",function(req, res){
   res.sendFile(path.join(__dirname, "./client/build/index.html"))
 })
 // port
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8080;
 
 //RUN LISTEN
 
