@@ -11,7 +11,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 
-
+app.use(cors());
 
 //configure env
 dotenv.config();
@@ -28,7 +28,7 @@ const __dirname = path.dirname(__filename);
 const app = express();
 
 //middlewares
-app.use(cors());
+// app.use(cors());
 app.use(express.json());
 app.use(morgan("dev"));
 app.use(express.static(path.join(__dirname, "./client/build")));
@@ -44,7 +44,7 @@ app.use("*",function(req, res){
   res.sendFile(path.join(__dirname, "./client/build/index.html"))
 })
 // port
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT;
 
 //RUN LISTEN
 
