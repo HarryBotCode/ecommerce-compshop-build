@@ -10,16 +10,13 @@ import cors from "cors";
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-
-
-
 //configure env
 dotenv.config();
 
 //database config
 connectDB();
 
-
+app.use(cors());
 //esmodule fix
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -28,10 +25,7 @@ const __dirname = path.dirname(__filename);
 const app = express();
 
 //middlewares
-app.use(cors({
-  origin: 'https://vast-pear-caridea-gear.cyclic.app/', 
-  credentials: true,
-}));
+
 
 app.use(express.json());
 app.use(morgan("dev"));
