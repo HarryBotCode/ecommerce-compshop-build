@@ -11,7 +11,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 
-app.use(cors());
+
 
 //configure env
 dotenv.config();
@@ -28,7 +28,7 @@ const __dirname = path.dirname(__filename);
 const app = express();
 
 //middlewares
-// app.use(cors());
+app.use(cors());
 app.use(express.json());
 app.use(morgan("dev"));
 app.use(express.static(path.join(__dirname, "./client/build")));
