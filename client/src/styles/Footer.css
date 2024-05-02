@@ -1,0 +1,32 @@
+
+
+.transparent-input {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border: 1px solid #ced4da; 
+    color:black;
+    width:300px;
+    padding-right: 70px;
+    
+  }
+
+  .transparent-input::placeholder {
+    color: white;
+    
+  }
+
+  .sub-btn{
+    width: 120px;
+    height:40px;
+    
+  }
+
+  .bg{
+    background: #020203;
+    
+  }
+
+  .a-unstyled{
+    font-size:13px;
+    text-decoration:none;
+    color:white;
+  }

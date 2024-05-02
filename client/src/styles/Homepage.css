@@ -1,0 +1,104 @@
+.banner-img {
+  margin-top: 101px;
+  
+}
+
+.home-page h1 {
+  color: rgb(48, 48, 48);
+ 
+}
+
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.background {
+  background-color: #f5f7ff;
+  
+}
+.home-page .card{
+  background-color: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+  
+}
+
+.home-page .card-name-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home-page .card-price {
+  color: rgb(37, 37, 37);
+  font-weight: bold;
+}
+
+.home-page button {
+  border-radius: 0;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.home-page .card-text {
+  color: rgb(90, 89, 89);
+}
+
+.home-page .card img:hover {
+  transform: scale(1.0);
+  transition: transform 0.5s;
+}
+.home-page .card:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.3s ease;
+}
+
+.home-page .card-img-top {
+  height: 250px !important;
+  transform: scale(0.8);
+  transition: transform 0.5s;
+}
+
+.home-page .horz-top {
+  height: 190px !important;
+  transform: scale(0.8);
+  transition: transform 0.5s;
+}
+/* ==================
+filters
+============== */
+.filters h4 {
+  margin-top: 100px;
+  background-color: #f5f7ff;
+  color: rgb(48, 48, 48) !important;
+  /* border-bottom: 1px solid rgba(128, 128, 128, 0.337); */
+}
+
+.ant-checkbox-wrapper:first-of-type {
+  margin-left: 8px;
+}
+
+.ant-checkbox-wrapper {
+  margin: 2px;
+}
+.ant-radio-wrapper {
+  margin-bottom: 5px !important;
+  margin-left: 10px;
+}
+
+
+
+.loadmore {
+  color: green;
+  font-weight: bold;
+  font-size: 20px !important;
+}
+
+.remove-link-style {
+text-decoration: none;
+color: inherit;
+}
+
