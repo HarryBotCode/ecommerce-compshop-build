@@ -28,7 +28,7 @@ const ProductDetails = () => {
   const getProduct = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8080/api/v1/product/get-product/${params.slug}`
+        `https://https://ecommerce-compshop-build.vercel.app/api/v1/product/get-product/${params.slug}`
       );
       setProduct(data?.product);
       getSimilarProduct(data?.product._id, data?.product.category._id);
@@ -40,7 +40,7 @@ const ProductDetails = () => {
   const getSimilarProduct = async (pid, cid) => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8080/api/v1/product/related-product/${pid}/${cid}`
+        `https://https://ecommerce-compshop-build.vercel.app/api/v1/product/related-product/${pid}/${cid}`
       );
       setRelatedProducts(data?.products);
     } catch (error) {
@@ -203,7 +203,7 @@ const ProductDetails = () => {
                   <div className="col-md-6 d-flex flex-column justify-content-around mt-4">
                     <div className="text-center">
                       <img
-                        src={`http://localhost:8080/api/v1/product/product-photo/${product._id}`}
+                        src={`https://https://ecommerce-compshop-build.vercel.app/api/v1/product/product-photo/${product._id}`}
                         className="img-fluid rounded-start card-image-top"
                         alt={product.name}
                       />
@@ -221,7 +221,7 @@ const ProductDetails = () => {
                   <div className="col-md-6 d-flex flex-column justify-content-around mt-4">
                     <div className="text-center">
                       <img
-                        src={`http://localhost:8080/api/v1/product/product-photo/${product._id}`}
+                        src={`https://https://ecommerce-compshop-build.vercel.app/api/v1/product/product-photo/${product._id}`}
                         className="img-fluid rounded-start card-image-top"
                         alt={product.name}
                       />
@@ -330,7 +330,7 @@ const ProductDetails = () => {
           {relatedProducts?.map((p) => (
             <div className="card ms-4 mb-4" style={{ width: "300px" }}>
               <img
-                src={`http://localhost:8080/api/v1/product/product-photo/${p._id}`}
+                src={`https://https://ecommerce-compshop-build.vercel.app/api/v1/product/product-photo/${p._id}`}
                 alt={p.name}
               />
               <div className="card-body">

@@ -12,7 +12,7 @@ const Products = () => {
   const getAllProducts = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8080/api/v1/product/get-product"
+        "https://https://ecommerce-compshop-build.vercel.app/api/v1/product/get-product"
       );
       setProducts(data.products);
     } catch (error) {
@@ -44,7 +44,7 @@ const Products = () => {
                   }
                 >
                   <img
-                    src={`http://localhost:8080/api/v1/product/product-photo/${p._id}`}
+                    src={`https://https://ecommerce-compshop-build.vercel.app/api/v1/product/product-photo/${p._id}`}
                     className="card-img"
                     alt={p.name}
                   />

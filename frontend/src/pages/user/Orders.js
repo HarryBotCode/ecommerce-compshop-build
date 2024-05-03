@@ -11,7 +11,7 @@ const Orders = () => {
   //get orders
   const getOrders = async () => {
     const { data } = await axios.get(
-      "http://localhost:8080/api/v1/auth/orders"
+      "https://https://ecommerce-compshop-build.vercel.app/api/v1/auth/orders"
     );
     setOrders(data);
   };
@@ -59,7 +59,7 @@ const Orders = () => {
                       <div className="row mb-2 p-3 card flex-row">
                         <div className="col-md-4">
                           <img
-                            src={`http://localhost:8080/api/v1/product/product-photo/${p._id}`}
+                            src={`https://https://ecommerce-compshop-build.vercel.app/api/v1/product/product-photo/${p._id}`}
                             className="card-img-top"
                             alt={p.name}
                             width={"100px"}

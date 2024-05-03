@@ -68,7 +68,7 @@ const CartPage = () => {
   const getToken = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8080/api/v1/product/braintree/token"
+        "https://https://ecommerce-compshop-build.vercel.app/api/v1/product/braintree/token"
       );
       setClientToken(data?.clientToken);
     } catch (error) {
@@ -92,7 +92,7 @@ const CartPage = () => {
 
       // Send payment data to your server
       const { data } = await axios.post(
-        "http://localhost:8080/api/v1/product/braintree/payment",
+        "https://https://ecommerce-compshop-build.vercel.app/api/v1/product/braintree/payment",
         {
           nonce,
           cart,
@@ -199,7 +199,7 @@ const CartPage = () => {
                       <tr key={p._id}>
                         <td>
                           <img
-                            src={`http://localhost:8080/api/v1/product/product-photo/${p._id}`}
+                            src={`https://https://ecommerce-compshop-build.vercel.app/api/v1/product/product-photo/${p._id}`}
                             alt={p.name}
                             height={"100px"}
                             style={{ marginRight: "-60px" }}
