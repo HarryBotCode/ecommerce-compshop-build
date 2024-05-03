@@ -26,7 +26,7 @@ const app = express();
 app.use(cors(
   {
     origin: ["https://ecommerce-compshop-build-build.vercel.app"],
-    methods: ["POST", "GET"],
+    methods: ["POST", "GET", "PUT"],
     credentials: true
   }
 
