@@ -22,7 +22,7 @@ const CategoryProduct = () => {
   const getPrductsByCat = async () => {
     try {
       const { data } = await axios.get(
-        `https://https://ecommerce-compshop-build.vercel.app/api/v1/product/product-category/${params.slug}`
+        `https://ecommerce-compshop-build.vercel.app/api/v1/product/product-category/${params.slug}`
       );
       setProducts(data?.products);
       setCategory(data?.category);
@@ -105,7 +105,7 @@ const CategoryProduct = () => {
                   style={{ width: "300px" }}
                 >
                   <img
-                    src={`https://https://ecommerce-compshop-build.vercel.app/api/v1/product/product-photo/${p._id}`}
+                    src={`https://ecommerce-compshop-build.vercel.app/api/v1/product/product-photo/${p._id}`}
                     className="card-img"
                     alt={p.name}
                   />

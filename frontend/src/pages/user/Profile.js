@@ -27,7 +27,7 @@ const Profile = () => {
     e.preventDefault();
     try {
       const { data } = await axios.put(
-        "https://https://ecommerce-compshop-build.vercel.app/api/v1/auth/profile",
+        "https://ecommerce-compshop-build.vercel.app/api/v1/auth/profile",
         {
           name,
           email,

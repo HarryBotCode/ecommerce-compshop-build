@@ -9,7 +9,7 @@ const Users = () => {
   //get orders
   const getOrders = async () => {
     const { data } = await axios.get(
-      "https://https://ecommerce-compshop-build.vercel.app/api/v1/auth/all-orders"
+      "https://ecommerce-compshop-build.vercel.app/api/v1/auth/all-orders"
     );
     setOrders(data);
   };

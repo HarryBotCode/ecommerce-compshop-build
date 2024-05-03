@@ -18,7 +18,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "https://https://ecommerce-compshop-build.vercel.app/api/v1/auth/login",
+        "https://ecommerce-compshop-build.vercel.app/api/v1/auth/login",
         {
           email,
           password,

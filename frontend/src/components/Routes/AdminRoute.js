@@ -13,7 +13,7 @@ export default function AdminRoute() {
       
       try{
       const res = await axios.get(
-      `https://https://ecommerce-compshop-build.vercel.app/api/v1/auth/admin-auth`
+      `https://ecommerce-compshop-build.vercel.app/api/v1/auth/admin-auth`
     );
     if (res.data.ok) {
       setOk(true);

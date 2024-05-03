@@ -69,7 +69,7 @@ const Search = () => {
                     style={{ width: "300px" }}
                   >
                     <img
-                      src={`https://https://ecommerce-compshop-build.vercel.app/api/v1/product/product-photo/${p._id}`}
+                      src={`https://ecommerce-compshop-build.vercel.app/api/v1/product/product-photo/${p._id}`}
                       className="card-img-top"
                       alt={p.name}
                     />

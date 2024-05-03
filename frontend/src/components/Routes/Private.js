@@ -11,7 +11,7 @@ export default function PrivateRoute() {
   useEffect(() => {
     const authCheck = async () => {
       const res = await axios.get(
-        "https://https://ecommerce-compshop-build.vercel.app/api/v1/auth/user-auth"
+        "https://ecommerce-compshop-build.vercel.app/api/v1/auth/user-auth"
       );
       if (res.data.ok) {
         setOk(true);

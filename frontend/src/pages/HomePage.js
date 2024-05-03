@@ -80,7 +80,7 @@ const HomePage = () => {
   const getAllCategory = async () => {
     try {
       const { data } = await axios.get(
-        "https://https://ecommerce-compshop-build.vercel.app/api/v1/category/get-category"
+        "https://ecommerce-compshop-build.vercel.app/api/v1/category/get-category"
       );
       if (data?.success) {
         setCategories(data?.category);
@@ -100,7 +100,7 @@ const HomePage = () => {
     try {
       setLoading(true);
       const { data } = await axios.get(
-        `https://https://ecommerce-compshop-build.vercel.app/api/v1/product/product-list/${page}`
+        `https://ecommerce-compshop-build.vercel.app/api/v1/product/product-list/${page}`
       );
       setLoading(false);
       setProducts(data.products);
@@ -114,7 +114,7 @@ const HomePage = () => {
   const getTotal = async () => {
     try {
       const { data } = await axios.get(
-        "https://https://ecommerce-compshop-build.vercel.app/api/v1/product/product-count"
+        "https://ecommerce-compshop-build.vercel.app/api/v1/product/product-count"
       );
       setTotal(data?.total);
     } catch (error) {
@@ -126,7 +126,7 @@ const HomePage = () => {
     try {
       setLoading(true);
       const { data } = await axios.get(
-        `https://https://ecommerce-compshop-build.vercel.app/api/v1/product/product-list/${page}`
+        `https://ecommerce-compshop-build.vercel.app/api/v1/product/product-list/${page}`
       );
       setLoading(false);
       setProducts((prevProducts) => [...prevProducts, ...data?.products]);
@@ -162,7 +162,7 @@ const HomePage = () => {
   const filterProduct = async () => {
     try {
       const { data } = await axios.post(
-        "https://https://ecommerce-compshop-build.vercel.app/api/v1/product/product-filters",
+        "https://ecommerce-compshop-build.vercel.app/api/v1/product/product-filters",
         { checked, radio }
       );
       setProducts(data?.products);
@@ -489,7 +489,7 @@ const HomePage = () => {
                       style={{ width: "270px" }}
                     >
                       <img
-                        src={`https://https://ecommerce-compshop-build.vercel.app/api/v1/product/product-photo/${s._id}`}
+                        src={`https://ecommerce-compshop-build.vercel.app/api/v1/product/product-photo/${s._id}`}
                         className="horz-top"
                         alt={s.name}
                       />
@@ -572,7 +572,7 @@ const HomePage = () => {
                         <div className="col-md-4 d-flex flex-column align-items-center">
                           <div className="">
                             <img
-                              src={`https://https://ecommerce-compshop-build.vercel.app/api/v1/product/product-photo/${p._id}`}
+                              src={`https://ecommerce-compshop-build.vercel.app/api/v1/product/product-photo/${p._id}`}
                               className="img-fluid rounded-start card-img-top"
                               alt={p.name}
                             />

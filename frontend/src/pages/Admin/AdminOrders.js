@@ -21,7 +21,7 @@ const AdminOrders = () => {
   //get orders
   const getOrders = async () => {
     const { data } = await axios.get(
-      `https://https://ecommerce-compshop-build.vercel.app/api/v1/auth/all-orders`
+      `https://ecommerce-compshop-build.vercel.app/api/v1/auth/all-orders`
     );
     setOrders(data);
   };
@@ -33,7 +33,7 @@ const AdminOrders = () => {
   const handleChange = async (orderId, value) => {
     try {
       const { data } = await axios.put(
-        `https://https://ecommerce-compshop-build.vercel.app/api/v1/auth/order-status/${orderId}`,
+        `https://ecommerce-compshop-build.vercel.app/api/v1/auth/order-status/${orderId}`,
         { status: value }
       );
       getOrders();
@@ -92,7 +92,7 @@ const AdminOrders = () => {
                       <div className="row mb-2 p-3 card flex-row">
                         <div className="col-md-4">
                           <img
-                            src={`https://https://ecommerce-compshop-build.vercel.app/api/v1/product/product-photo/${p._id}`}
+                            src={`https://ecommerce-compshop-build.vercel.app/api/v1/product/product-photo/${p._id}`}
                             className="img-fluid"
                             alt={p.name}
                             width={"150px"}
